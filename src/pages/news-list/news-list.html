@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>News</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content news-list">
+  <ion-list [virtualScroll]="news">
+    <ion-grid fixed>
+      <ion-row align-items-stretch>
+
+        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let news" approxItemHeight="457px">
+
+          <ion-card class="news-card">
+            <ion-card-header>
+              <button ion-item detail-none (click)="goToNewsDetail(news)">
+                <ion-avatar item-start>
+                  <img [src]="news.profilePic" alt="News profile pic">
+                </ion-avatar>
+                {{news.name}}
+              </button>
+            </ion-card-header>
+
+            <ion-card-content class="outer-content">
+              <ion-list>
+                <button ion-item *ngFor="let session of news.sessions" (click)="goToSessionDetail(session)">
+                  <h3>{{session.name}}</h3>
+                </button>
+
+                <button ion-item (click)="goToNewsDetail(news)">
+                  <h3>About {{news.name}}</h3>
+                </button>
+              </ion-list>
+            </ion-card-content>
+
+            <ion-row no-padding>
+              <ion-col col-12 col-lg-auto text-center text-lg-left>
+                <button ion-button clear small color="primary" icon-start (click)="goToNewsTwitter(news)">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  Tweet
+                </button>
+              </ion-col>
+              <ion-col col-12 col-lg-auto text-center>
+                <button ion-button clear small color="primary" icon-start (click)="openNewsShare(news)">
+                  <ion-icon name='share-alt'></ion-icon>
+                  Share
+                </button>
+              </ion-col>
+              <ion-col col-12 col-lg-auto text-center text-lg-right>
+                <button ion-button clear small color="primary" icon-start (click)="openContact(news)">
+                  <ion-icon name='chatboxes'></ion-icon>
+                  Contact
+                </button>
+              </ion-col>
+            </ion-row>
+
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>
