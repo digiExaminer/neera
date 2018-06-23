@@ -152,4 +152,10 @@ export class ConferenceData {
     });
   }
 
+  getAchievement() {
+    return this.load().map((data: any) => {
+      return data.achievement;
+    });
+  }
+
 }

@@ -29,6 +29,8 @@ import { SupportPage } from '../pages/support/support';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
+import {AchievementPage} from '../pages/achievement-list/achievement-list';
+import {AchievementDetailPage} from '../pages/achievement-detail/achievement-detail';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { UserData } from '../providers/user-data';
     NewsListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    AchievementPage,
+    AchievementDetailPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ import { UserData } from '../providers/user-data';
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: AchievementPage, name: 'AchievementPage', segment: 'achievement'},
+        { component: AchievementDetailPage, name: 'AchievementDetailPage', segment: 'achievementDetail' },
       ]
     }),
     IonicStorageModule.forRoot()
@@ -86,7 +92,9 @@ import { UserData } from '../providers/user-data';
     NewsListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    AchievementPage,
+    AchievementDetailPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

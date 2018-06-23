@@ -19,6 +19,9 @@ import { SupportPage } from '../pages/support/support';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
+import {AchievementPage} from '../pages/achievement-list/achievement-list';
+
+
 export interface PageInterface {
   title: string;
   name: string;
@@ -45,7 +48,8 @@ export class ConferenceApp {
     { title: 'Home', name: 'TabsPage', component: TabsPage, tabComponent: HomePage, index: 0, icon: 'calendar' },
     { title: 'News', name: 'TabsPage', component: TabsPage, tabComponent: NewsListPage, index: 1, icon: 'contacts' },
     { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
-    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
+    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
+    { title: 'Achievement', name: 'AchievementPage', component: AchievementPage, icon: 'person' },
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
