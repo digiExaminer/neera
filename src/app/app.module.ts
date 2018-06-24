@@ -1,11 +1,15 @@
+import { YoutubePipe } from './../pipes/youtube/youtube';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgModule, ErrorHandler } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
 
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -60,11 +64,15 @@ import {EducationAndSupportPage} from '../pages/education-support/education-supp
     DevelopmentPage,
     MediaPage,
     WomenImpowermentPage,
-    EducationAndSupportPage
+    EducationAndSupportPage,
+    YoutubePipe
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
+
+
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
