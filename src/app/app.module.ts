@@ -31,6 +31,11 @@ import { UserData } from '../providers/user-data';
 
 import {AchievementPage} from '../pages/achievement-list/achievement-list';
 import {AchievementDetailPage} from '../pages/achievement-detail/achievement-detail';
+import {KodarmaPage} from '../pages/kodarma/kodarma';
+import {DevelopmentPage} from '../pages/development/development';
+import {MediaPage} from '../pages/media/media';
+import {WomenImpowermentPage} from '../pages/women-impowerment/women-impowerment';
+import {EducationAndSupportPage} from '../pages/education-support/education-support';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,12 @@ import {AchievementDetailPage} from '../pages/achievement-detail/achievement-det
     TutorialPage,
     SupportPage,
     AchievementPage,
-    AchievementDetailPage
+    AchievementDetailPage,
+    KodarmaPage,
+    DevelopmentPage,
+    MediaPage,
+    WomenImpowermentPage,
+    EducationAndSupportPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +81,12 @@ import {AchievementDetailPage} from '../pages/achievement-detail/achievement-det
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
         { component: AchievementPage, name: 'AchievementPage', segment: 'achievement'},
+        { component: MediaPage, name: 'MediaPage', segment: 'media' },
+        { component: KodarmaPage, name: 'KodarmaPage', segment: 'kodarma' },
         { component: AchievementDetailPage, name: 'AchievementDetailPage', segment: 'achievementDetail' },
+        { component: DevelopmentPage, name: 'DevelopmentPage', segment: 'development' },
+        { component: WomenImpowermentPage, name: 'WomenImpowermentPage', segment: 'womenImpowerment' },
+        { component: EducationAndSupportPage, name: 'EducationAndSupportPage', segment: 'educationAndSupport' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -94,7 +109,12 @@ import {AchievementDetailPage} from '../pages/achievement-detail/achievement-det
     TutorialPage,
     SupportPage,
     AchievementPage,
-    AchievementDetailPage
+    AchievementDetailPage,
+    KodarmaPage,
+    DevelopmentPage,
+    MediaPage,
+    WomenImpowermentPage,
+    EducationAndSupportPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

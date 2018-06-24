@@ -20,7 +20,11 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
 import {AchievementPage} from '../pages/achievement-list/achievement-list';
-
+import {KodarmaPage} from '../pages/kodarma/kodarma';
+import {DevelopmentPage} from '../pages/development/development';
+import {MediaPage} from '../pages/media/media';
+import {WomenImpowermentPage} from '../pages/women-impowerment/women-impowerment';
+import {EducationAndSupportPage} from '../pages/education-support/education-support';
 
 export interface PageInterface {
   title: string;
@@ -49,7 +53,12 @@ export class ConferenceApp {
     { title: 'News', name: 'TabsPage', component: TabsPage, tabComponent: NewsListPage, index: 1, icon: 'contacts' },
     { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
     { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
+    { title: 'Media ', name: 'MediaPage', component: MediaPage, icon: 'information-circle' },
     { title: 'Achievement', name: 'AchievementPage', component: AchievementPage, icon: 'person' },
+    { title: 'know your Kodarma ', name: 'KodarmaPage', component: KodarmaPage, icon: 'map' },
+    { title: 'know your Development ', name: 'DevelopmentPage', component: DevelopmentPage, icon: 'information-circle' },
+    { title: 'Women Impowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'information-circle' },
+    { title: 'Education & Support', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'information-circle' }
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
