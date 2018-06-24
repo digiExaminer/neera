@@ -16,7 +16,7 @@ export class MediaPage {
   search:string='ionic-2';
   posts:any=[];
   constructor(public navCtrl: NavController,public http: Http) {
-    let url="https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails%20&playlistId=PLSMsA8lz8TLzpnOoX4CTJhnUWMJzzMfqF&key=AIzaSyDPqPb7KdKk2SRkgJbcaZTxncBiPM1F7aQ";
+    let url="https://www.googleapis.com/youtube/v3/playlistItems?maxResults=25&part=snippet%2CcontentDetails%20&playlistId=PLSMsA8lz8TLzpnOoX4CTJhnUWMJzzMfqF&key=AIzaSyDPqPb7KdKk2SRkgJbcaZTxncBiPM1F7aQ&resultsPerPage=150";
     this.http.get(url).map(res=>res.json()).subscribe(data=>{
       this.posts=this.posts.concat(data.items);
       this.profileUrl="assets/img/speakers/bear.jpg";

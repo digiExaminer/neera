@@ -13,7 +13,7 @@
         <ion-avatar item-start>
             <img src= {{profileUrl}}/>
         </ion-avatar>
-        <h2>{{item.name}}</h2>
+        <h2>{{item.snippet.title}}</h2>
         <p>{{item.contentDetails.videoPublishedAt | date:'full'}}</p>
       </ion-item>
 
@@ -22,7 +22,7 @@
       </div>
 
       <ion-card-content>
-        <p>Wait a minute. Wait a minute,  This is heavy. hello dost kaise ho </p>
+        <p>{{item.snippet.description}}</p>
       </ion-card-content>
 
        <ion-row>
