@@ -116,7 +116,7 @@ export class ConferenceData {
     });
 
     // if the segement is 'favorites', but session is not a user favorite
-    // then this session does not pass the segment test
+    // then this session does not pass the segment 
     let matchesSegment = false;
     if (segment === 'favorites') {
       if (this.user.hasFavorite(session.name)) {

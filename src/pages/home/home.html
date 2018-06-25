@@ -5,6 +5,7 @@
     </button>
 
     <ion-segment [(ngModel)]="segment" (ionChange)="updateHome()">
+
       <ion-segment-button value="all">
         HOME
       </ion-segment-button>
@@ -12,8 +13,8 @@
         Favorites
       </ion-segment-button>
       <!-- neeed to implement -->
-      <ion-segment-button value="all">
-        Updated
+      <ion-segment-button value="event" >
+        Events
       </ion-segment-button>
       <!-- need to update end -->
     </ion-segment>
@@ -34,7 +35,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+    <div *ngIf="!eventFlag">
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
@@ -89,6 +91,10 @@
         name="logo-facebook"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
-
-
+  </div>
+  <!-- for event page -->
+  <span *ngIf="eventFlag" padding>
+    <h1>Display data for Upcoming event</h1>
+  </span>
+  <!-- event page end -->
 </ion-content>
