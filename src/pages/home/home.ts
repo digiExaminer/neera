@@ -26,6 +26,8 @@ export class HomePage {
   segment = 'all';
   excludeTracks: any = [];
   shownSessions: any = [];
+  eventData:any = [];
+  eventFlag = false;
   groups: any = [];
   confDate: string;
 
@@ -46,13 +48,23 @@ export class HomePage {
   }
 
   updateHome() {
+    if(this.segment === 'event'){
+      // service call to get data for upcoming event
+      // assign response data to this.eventData
+      this.eventFlag = true;
+      
+    }else{
+      this.eventFlag = false;
     // Close any open sliding items when the home updates
     this.homeList && this.homeList.closeSlidingItems();
 
     this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
       this.shownSessions = data.shownSessions;
       this.groups = data.groups;
+
     });
+    }
+
   }
 
   presentFilter() {

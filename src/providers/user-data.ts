@@ -7,6 +7,7 @@ import { Storage } from '@ionic/storage';
 @Injectable()
 export class UserData {
   _favorites: string[] = [];
+  _events:string[] = [];
   HAS_LOGGED_IN = 'hasLoggedIn';
   HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
 
@@ -29,7 +30,7 @@ export class UserData {
       this._favorites.splice(index, 1);
     }
   };
-
+ 
   login(username: string): void {
     this.storage.set(this.HAS_LOGGED_IN, true);
     this.setUsername(username);
