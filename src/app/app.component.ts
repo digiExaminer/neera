@@ -58,7 +58,7 @@ export class ConferenceApp {
     { title: 'know your Kodarma ', name: 'KodarmaPage', component: KodarmaPage, icon: 'map' },
     { title: 'know your Development ', name: 'DevelopmentPage', component: DevelopmentPage, icon: 'information-circle' },
     { title: 'Women Impowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'information-circle' },
-    { title: 'Education & Support', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'information-circle' }
+    { title: 'Education & Sport', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'information-circle' }
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
