@@ -1,12 +1,28 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>education and support</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
-  <ion-content >
-    <h1>education-support</h1>
+    <ion-segment [(ngModel)]="segment" (ionChange)="updateEducation()">
+
+      <ion-segment-button value="education">
+        EDUCATION
+      </ion-segment-button>
+      <ion-segment-button value="sports">
+        SPORTS
+      </ion-segment-button>
+      </ion-segment>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <!-- for Education tab -->
+  <div *ngIf="!tabDisplayFlag">
+<h1>Education tab is active</h1>
+  </div>
+  <!-- for Sports tab -->
+<div *ngIf="tabDisplayFlag">
+<h1>sports tab is active</h1>
+  </div>
 </ion-content>

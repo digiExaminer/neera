@@ -158,4 +158,10 @@ export class ConferenceData {
     });
   }
 
+  getEvents() {
+    return this.load().map((data: any) => {
+      return data.events;
+    });
+  }
+
 }

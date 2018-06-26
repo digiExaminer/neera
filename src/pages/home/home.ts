@@ -8,6 +8,7 @@ import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 import {HomeFilterPage  } from '../home-filter/home-filter';
+import {EventDetailPage} from '../event-detail/event-detail';
 
 
 @Component({
@@ -49,8 +50,9 @@ export class HomePage {
 
   updateHome() {
     if(this.segment === 'event'){
-      // service call to get data for upcoming event
-      // assign response data to this.eventData
+      this.confData.getEvents().subscribe((events:any[]) =>{
+        this.eventData = events;
+      });
       this.eventFlag = true;
       
     }else{
@@ -67,6 +69,13 @@ export class HomePage {
 
   }
 
+  /*
+  * function to go to Event Details page
+  * params: current selected object
+  */
+ goEventDetail(data){
+  this.navCtrl.push(EventDetailPage,{data});
+ }
   presentFilter() {
     let modal = this.modalCtrl.create(HomeFilterPage, this.excludeTracks);
     modal.present();
