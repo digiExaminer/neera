@@ -34,7 +34,7 @@ $headings-font-weight: 300;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #ff9800,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -44,8 +44,9 @@ $colors: (
   google:     #dc4a38,
   vimeo:      #23b6ea,
   facebook:   #3b5998,
-  event_nav:#000000
-  ,
+  event_nav:#000000,
+  homeHeadTop:#ff9800,
+
 );
 
 
