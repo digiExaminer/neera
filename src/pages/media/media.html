@@ -3,21 +3,22 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Achievement</ion-title>
+    <ion-title>NEERA <span><img class="circlelogo" src="assets/img/bjp3.png" /></span></ion-title>
   </ion-navbar>
 </ion-header>
+
 
 <ion-content class="card-background-page">
   <ion-card *ngFor="let item of posts;">
       <ion-item >
         <ion-avatar item-start>
-            <img src= {{profileUrl}}/>
+            <img src= "assets/img/neeralogo.jpg"/>
         </ion-avatar>
         <h2>{{item.snippet.title}}</h2>
         <p>{{item.contentDetails.videoPublishedAt | date:'full'}}</p>
       </ion-item>
 
-      <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="page-video1">
+      <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="">
         <iframe [src]="item.contentDetails.videoId | youtube" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
       </div>
 
