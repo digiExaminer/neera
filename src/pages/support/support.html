@@ -11,24 +11,56 @@
 
 
 <ion-content>
-	<div class="logo">
-		<img src="assets/img/appicon.svg" alt="Ionic Logo">
-	</div>
+    <ion-card style="        padding: 10px;
+    background-color: #009688;
+    box-shadow: none;">
+        <div style="    display: inline-flex;"><div><img style="    border: 1px solid #ff9800;
+          border-radius: 50%;" src="assets/img/bjplogo11.png"/></div><div><img style="border-radius: 50%;
+          margin-left: 10px;
+          border: 1px solid #ff9800;" src="assets/img/neerayd.png"/></div></div>
+      </ion-card>
 
+      <ion-card style="        padding: 10px;
+      background-color: #009688;
+      box-shadow: none;">
 	<form #submitForm="ngForm" novalidate (ngSubmit)="submit(submitForm)">
 		<ion-list no-lines>
-			<ion-item>
-				<ion-label stacked color="primary">Enter your support message below</ion-label>
-				<ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
-			</ion-item>
-		</ion-list>
+			    <ion-item class="support-input-margin">
+						<ion-label stacked color="primary">Full Name</ion-label>
+						<ion-input type="number" required>
+						</ion-input>
+					</ion-item>
+					<p ion-text [hidden]="submitted == false" color="danger" padding-left>
+						Full Name is required
+					</p>
 
-		<p ion-text [hidden]="supportQuestion.valid || submitted === false" color="danger" padding-left>
-			Support message is required
-		</p>
+			<ion-item class="support-input-margin">
+					<ion-label stacked color="primary">Mobile Number</ion-label>
+					<ion-input type="number" required>
+					</ion-input>
+				</ion-item>
+				<p ion-text [hidden]="submitted == false" color="danger" padding-left>
+					Mobile Number  is required
+				</p>
+				<ion-item class="support-input-margin">
+						<ion-label stacked color="primary">Enter your complain message below</ion-label>
+						<ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
+					</ion-item>
+				</ion-list>
 
+				<p ion-text [hidden]="supportQuestion.valid || submitted === false" color="danger" padding-left>
+					 Message is required
+				</p>
+				<ion-item class="support-input-margin">
+						<ion-label stacked color="primary">Supporting Document or any proof</ion-label>
+						<ion-input type="file" required>
+						</ion-input>
+					</ion-item>
+					<p ion-text [hidden]="submitted == false" color="danger" padding-left>
+						Document  is required
+					</p>
 		<div padding>
-			<button ion-button block type="submit">Submit</button>
+			<button ion-button block type="submit" style="text-align: center;">  <ion-icon style="font-size: 35px;" name="ios-send"></ion-icon>&nbsp;&nbsp;&nbsp;Submit your message</button>
 		</div>
-	</form>
+	</form></ion-card>
 </ion-content>

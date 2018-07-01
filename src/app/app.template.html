@@ -8,8 +8,8 @@
         <ion-title>Menu dks</ion-title>
       </ion-toolbar> -->
       <ion-toolbar>
-          <ion-title> <img src="assets/img/speakers/bear.jpg" class="drower-pic" alt="logo">
-         <p>mkpandey@gmail.com</p>
+          <ion-title> <img src="assets/img/neeralogo.jpg" class="drower-pic" alt="logo">
+         <p class="email-profile">mkpandey@gmail.com</p>
           </ion-title>
         </ion-toolbar>
     </ion-header>
@@ -18,7 +18,7 @@
 
       <ion-list>
         <!-- <ion-list-header>
-          Navigate 
+          Navigate
         </ion-list-header> -->
         <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
           <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>

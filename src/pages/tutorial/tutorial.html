@@ -1,7 +1,7 @@
-<ion-header no-border>
+<ion-header no-border style="background-color: #ff9800;">
   <ion-navbar>
     <ion-buttons end *ngIf="showSkip">
-      <button ion-button (click)="startApp()" color="primary">Skip</button>
+      <button ion-button (click)="startApp()" color="event_nav">Skip</button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -10,13 +10,16 @@
   <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
 
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+
+      <img src="assets/img/neerablue2.png" style="margin:0px!important;padding-top: 20px;" class="slide-image"/>
+      <img src="assets/img/lotuscircle.png" style="margin:0px!important;" class="slide-image"/>
       <h2 class="slide-title">
-        Welcome to <b>ICA</b>
+        <b>Dr. Neera Yadav</b><br/>
+       <span style="font-size: 12px;">Minister for Human Resource Development.
+          Jharkhand</span>
+
       </h2>
-      <p>
-        The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.
-      </p>
+
     </ion-slide>
 
     <ion-slide>

@@ -13,6 +13,7 @@ export class SupportPage {
   submitted: boolean = false;
   supportMessage: string;
 
+
   constructor(
     public navCtrl: NavController,
     public alertCtrl: AlertController,
@@ -35,6 +36,7 @@ export class SupportPage {
     if (form.valid) {
       this.supportMessage = '';
       this.submitted = false;
+
 
       let toast = this.toastCtrl.create({
         message: 'Your support request has been sent.',
