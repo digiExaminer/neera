@@ -41,6 +41,7 @@ import {MediaPage} from '../pages/media/media';
 import {WomenImpowermentPage} from '../pages/women-impowerment/women-impowerment';
 import {EducationAndSupportPage} from '../pages/education-support/education-support';
 import {EventDetailPage} from '../pages/event-detail/event-detail';
+import {HomeDetailPage} from '../pages/home-detail/home-detail';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import {EventDetailPage} from '../pages/event-detail/event-detail';
     WomenImpowermentPage,
     EducationAndSupportPage,
     YoutubePipe,
-    EventDetailPage
+    EventDetailPage,
+    HomeDetailPage
   ],
   imports: [
     BrowserModule,
@@ -98,6 +100,7 @@ import {EventDetailPage} from '../pages/event-detail/event-detail';
         { component: WomenImpowermentPage, name: 'WomenImpowermentPage', segment: 'womenImpowerment' },
         { component: EducationAndSupportPage, name: 'EducationAndSupportPage', segment: 'educationAndSupport' },
         { component: EventDetailPage, name: 'EventDetailPage', segment: 'eventDetail' },
+        { component: HomeDetailPage, name: 'HomeDetailPage', segment: 'homeDetail' },
       ]
     }),
     IonicStorageModule.forRoot()
@@ -126,7 +129,8 @@ import {EventDetailPage} from '../pages/event-detail/event-detail';
     MediaPage,
     WomenImpowermentPage,
     EducationAndSupportPage,
-    EventDetailPage
+    EventDetailPage,
+    HomeDetailPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

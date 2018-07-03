@@ -9,6 +9,7 @@ import { UserData } from '../../providers/user-data';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import {HomeFilterPage  } from '../home-filter/home-filter';
 import {EventDetailPage} from '../event-detail/event-detail';
+import {HomeDetailPage} from '../home-detail/home-detail';
 
 
 @Component({
@@ -28,8 +29,10 @@ export class HomePage {
   excludeTracks: any = [];
   shownSessions: any = [];
   eventData:any = [];
+  homePageData = [];
   eventFlag = false;
-  groups: any = [];
+  homeFlag = false;
+  favoriteFlag = false;
   confDate: string;
 
   constructor(
@@ -54,104 +57,26 @@ export class HomePage {
         this.eventData = events;
       });
       this.eventFlag = true;
-      
-    }else{
-      this.eventFlag = false;
-    // Close any open sliding items when the home updates
-    this.homeList && this.homeList.closeSlidingItems();
-
-    this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
-      this.shownSessions = data.shownSessions;
-      this.groups = data.groups;
-
-    });
-    }
-
-  }
-
-  /*
-  * function to go to Event Details page
-  * params: current selected object
-  */
- goEventDetail(data){
-  this.navCtrl.push(EventDetailPage,{data});
- }
-  presentFilter() {
-    let modal = this.modalCtrl.create(HomeFilterPage, this.excludeTracks);
-    modal.present();
-
-    modal.onWillDismiss((data: any[]) => {
-      if (data) {
-        this.excludeTracks = data;
-        this.updateHome();
-      }
-    });
-
-  }
-
-  goToSessionDetail(sessionData: any) {
-    // go to the session detail page
-    // and pass in the session data
-
-    this.navCtrl.push(SessionDetailPage, { sessionId: sessionData.id, name: sessionData.name });
-  }
-
-  addFavorite(slidingItem: ItemSliding, sessionData: any) {
-
-    if (this.user.hasFavorite(sessionData.name)) {
-      // woops, they already favorited it! What shall we do!?
-      // prompt them to remove it
-      this.removeFavorite(slidingItem, sessionData, 'Favorite already added');
-    } else {
-      // remember this session as a user favorite
-      this.user.addFavorite(sessionData.name);
-
-      // create an alert instance
-      let alert = this.alertCtrl.create({
-        title: 'Favorite Added',
-        buttons: [{
-          text: 'OK',
-          handler: () => {
-            // close the sliding item
-            slidingItem.close();
-          }
-        }]
+      this.homeFlag = false;
+      this.favoriteFlag = false;
+    }else if(this.segment === 'all'){
+      // get data for home page
+      this.confData.getHomeData().subscribe((events:any[]) =>{
+        this.homePageData = events;
+        console.log(this.homePageData)
       });
-      // now present the alert on top of all other content
-      alert.present();
+      this.eventFlag = false;
+      this.homeFlag = true;
+      this.favoriteFlag = false;
+    } else if(this.segment == 'favorites'){
+      // get data for favorites
+      this.eventFlag = false;
+      this.homeFlag = false;
+      this.favoriteFlag = true;
     }
-
   }
 
-  removeFavorite(slidingItem: ItemSliding, sessionData: any, title: string) {
-    let alert = this.alertCtrl.create({
-      title: title,
-      message: 'Would you like to remove this session from your favorites?',
-      buttons: [
-        {
-          text: 'Cancel',
-          handler: () => {
-            // they clicked the cancel button, do not remove the session
-            // close the sliding item and hide the option buttons
-            slidingItem.close();
-          }
-        },
-        {
-          text: 'Remove',
-          handler: () => {
-            // they want to remove this session from their favorites
-            this.user.removeFavorite(sessionData.name);
-            this.updateHome();
 
-            // close the sliding item and hide the option buttons
-            slidingItem.close();
-          }
-        }
-      ]
-    });
-    // now present the alert on top of all other content
-    alert.present();
-  }
 
   openSocial(network: string, fab: FabContainer) {
     let loading = this.loadingCtrl.create({
@@ -164,22 +89,11 @@ export class HomePage {
     loading.present();
   }
 
-  doRefresh(refresher: Refresher) {
-    this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
-      this.shownSessions = data.shownSessions;
-      this.groups = data.groups;
-
-      // simulate a network request that would take longer
-      // than just pulling from out local json file
-      setTimeout(() => {
-        refresher.complete();
-
-        const toast = this.toastCtrl.create({
-          message: 'Sessions have been updated.',
-          duration: 3000
-        });
-        toast.present();
-      }, 1000);
-    });
+  goEventDetails(data){
+    this.navCtrl.push(EventDetailPage,{data});
   }
+  goHomeDetail(data){
+     this.navCtrl.push(HomeDetailPage,{data});
+  }
+
 }

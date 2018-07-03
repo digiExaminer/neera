@@ -34,53 +34,7 @@
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
-<ion-content >
-    <div *ngIf="!eventFlag">
-  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher> -->
-
-  <ion-list #homeList [hidden]="shownSessions === 0">
-
-    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
-
-      <ion-item-divider sticky>
-        <ion-label>
-          {{group.time}}
-        </ion-label>
-      </ion-item-divider>
-
-      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
-
-        <button ion-item (click)="goToSessionDetail(session)">
-          <h3>{{session.name}}</h3>
-          <p>
-            {{session.timeStart}} &mdash;
-            {{session.timeEnd}}:
-            {{session.location}}
-          </p>
-        </button>
-
-        <ion-item-options>
-          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
-            Favorite
-          </button>
-          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
-            Remove
-          </button>
-        </ion-item-options>
-
-      </ion-item-sliding>
-
-    </ion-item-group>
-
-  </ion-list>
-
-  <ion-list-header [hidden]="shownSessions > 0">
-      No Sessions Found
-  </ion-list-header>
-
+<ion-content>
   <ion-fab bottom right #fab>
     <button ion-fab><ion-icon name="share"></ion-icon></button>
     <ion-fab-list side="top">
@@ -91,22 +45,22 @@
         name="logo-facebook"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
-  </div>
-  <!-- for event page -->
-  <span *ngIf="eventFlag" padding>
-    <ion-card *ngFor="let item of eventData;">
-      <ion-item (click)="goEventDetail(item)">
+
+  <!-- div for home -->
+  <div *ngIf="homeFlag">
+    <ion-card *ngFor="let item of homePageData;">
+      <ion-item (click)="goHomeDetail(item)">
         <ion-avatar item-start>
-            <img src= {{item.profilePic}}/>
+            <img src= {{item.imgUrl}}/>
         </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>November 5, 1955</p>
+        <h2>{{item.title}}</h2>
+        <p>{{item.time}}</p>
       </ion-item>
     
-      <img src= {{item.profilePic}}/>
+      <img src= {{item.imgUrl}}/>
     
       <ion-card-content>
-        <p>Wait a minute. Wait a minute,  This is heavy. hello dost kaise ho </p>
+        <p>{{item.subDesc}}</p>
       </ion-card-content>
     
        <ion-row>
@@ -129,6 +83,49 @@
         </ion-col> 
        </ion-row> 
     </ion-card>
-  </span>
-  <!-- event page end -->
+  </div>
+
+  <!-- div for favorite -->
+  <div *ngIf="favoriteFlag">
+    <h1>Need to be implemented</h1>
+  </div>
+
+<!-- div for event -->
+<div *ngIf="eventFlag">
+  <ion-card *ngFor="let item of eventData;">
+    <ion-item (click)="goEventDetails(item)">
+      <ion-avatar item-start>
+          <img src= {{item.imgUrl}}/>
+      </ion-avatar>
+      <h2>{{item.title}}</h2>
+      <p>{{item.time}}</p>
+    </ion-item>
+  
+    <img src= {{item.imgUrl}}/>
+  
+    <ion-card-content>
+      <p>{{item.subDesc}}</p>
+    </ion-card-content>
+  
+     <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col> 
+       <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col> 
+     </ion-row> 
+  </ion-card>
+</div>
 </ion-content>

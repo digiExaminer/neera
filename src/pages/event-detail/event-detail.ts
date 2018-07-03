@@ -8,9 +8,10 @@ import { ConferenceData } from '../../providers/conference-data';
   templateUrl: 'event-detail.html'
 })
 export class EventDetailPage {
-  news: any;
+  item: any;
 
   constructor(public dataProvider: ConferenceData, public navCtrl: NavController, public navParams: NavParams) {
    console.log( this.navParams.get('data'));
+   this.item = this.navParams.get('data');
   }
 }

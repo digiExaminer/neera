@@ -132,11 +132,7 @@ export class ConferenceData {
 
   getNews() {
     return this.load().map((data: any) => {
-      return data.news.sort((a: any, b: any) => {
-        let aName = a.name.split(' ').pop();
-        let bName = b.name.split(' ').pop();
-        return aName.localeCompare(bName);
-      });
+      return data.homePageData;
     });
   }
 
@@ -160,7 +156,13 @@ export class ConferenceData {
 
   getEvents() {
     return this.load().map((data: any) => {
-      return data.events;
+      return data.homePageData;
+    });
+  }
+
+  getHomeData() {
+    return this.load().map((data: any) => {
+      return data.homePageData;
     });
   }
 
