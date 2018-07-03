@@ -1,13 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { AlertController, App, FabContainer, ItemSliding, List, ModalController, NavController, ToastController, LoadingController, Refresher } from 'ionic-angular';
+import { AlertController, App, FabContainer, List, ModalController, NavController, ToastController, LoadingController } from 'ionic-angular';
 
 
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
-import { SessionDetailPage } from '../session-detail/session-detail';
-import {HomeFilterPage  } from '../home-filter/home-filter';
 import {EventDetailPage} from '../event-detail/event-detail';
 import {HomeDetailPage} from '../home-detail/home-detail';
 

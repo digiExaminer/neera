@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { ConferenceData } from '../../providers/conference-data';
-
 @Component({
   selector: 'page-news-detail',
   templateUrl: 'news-detail.html'
