@@ -53,12 +53,12 @@ export class ConferenceApp {
     { title: 'News', name: 'TabsPage', component: TabsPage, tabComponent: NewsListPage, index: 1, icon: 'contacts' },
     { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
     { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
-    { title: 'Media ', name: 'MediaPage', component: MediaPage, icon: 'information-circle' },
-    { title: 'Achievement', name: 'AchievementPage', component: AchievementPage, icon: 'person' },
+    { title: 'Media ', name: 'MediaPage', component: MediaPage, icon: 'camera' },
+    { title: 'Achievement', name: 'AchievementPage', component: AchievementPage, icon: 'trophy' },
     { title: 'know your Kodarma ', name: 'KodarmaPage', component: KodarmaPage, icon: 'map' },
     { title: 'know your Development ', name: 'DevelopmentPage', component: DevelopmentPage, icon: 'information-circle' },
-    { title: 'Women Impowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'information-circle' },
-    { title: 'Education & Sport', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'information-circle' }
+    { title: 'Women Impowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'woman' },
+    { title: 'Education & Sport', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'ios-book' }
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },

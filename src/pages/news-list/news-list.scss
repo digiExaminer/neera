@@ -1,8 +1,16 @@
 page-news-list {
 
  .scroll-content {
-        background: #009688
+        background: #1d74ff
     }
+ .item .row, .item .col {
+  padding: 0;
+}
+
+.title-image {
+  vertical-align: middle;
+  margin: 0px 0px 0px 163px;
+}
 
   .news-card {
     height: 100%;

@@ -2,13 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 
 import { AlertController, App, FabContainer, List, ModalController, NavController, ToastController, LoadingController } from 'ionic-angular';
 
-
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
 import {EventDetailPage} from '../event-detail/event-detail';
 import {HomeDetailPage} from '../home-detail/home-detail';
-
+import {LoginPage} from '../login/login';
 
 @Component({
   selector: 'page-home',
@@ -93,5 +92,7 @@ export class HomePage {
   goHomeDetail(data){
      this.navCtrl.push(HomeDetailPage,{data});
   }
-
+  redirectToLogin(){
+  this.navCtrl.push(LoginPage);
+  }
 }
