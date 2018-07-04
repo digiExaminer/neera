@@ -60,7 +60,6 @@ export class HomePage {
       // get data for home page
       this.confData.getHomeData().subscribe((events:any[]) =>{
         this.homePageData = events;
-        console.log(this.homePageData)
       });
       this.eventFlag = false;
       this.homeFlag = true;

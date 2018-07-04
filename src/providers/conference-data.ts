@@ -160,6 +160,22 @@ export class ConferenceData {
     });
   }
 
+  getEducationData() {
+    return this.load().map((data: any) => {
+      return data.homePageData;
+    });
+  }
+  getSportsData() {
+    return this.load().map((data: any) => {
+      return data.homePageData;
+    });
+  }
+  getWomenEmpowermentData() {
+    return this.load().map((data: any) => {
+      return data.homePageData;
+    });
+  }
+
   getHomeData() {
     return this.load().map((data: any) => {
       return data.homePageData;

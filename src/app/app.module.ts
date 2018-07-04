@@ -42,6 +42,9 @@ import {WomenImpowermentPage} from '../pages/women-impowerment/women-impowerment
 import {EducationAndSupportPage} from '../pages/education-support/education-support';
 import {EventDetailPage} from '../pages/event-detail/event-detail';
 import {HomeDetailPage} from '../pages/home-detail/home-detail';
+import{WomenEmpowermentDetailPage} from '../pages/women-empoermentdetail/women-empoermentdetail';
+import {EducationDetailPage} from '../pages/education-detail/education-detail';
+import {SportDetailPage} from '../pages/sport-detail/sport-detail';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import {HomeDetailPage} from '../pages/home-detail/home-detail';
     EducationAndSupportPage,
     YoutubePipe,
     EventDetailPage,
-    HomeDetailPage
+    HomeDetailPage,
+    WomenEmpowermentDetailPage,
+    EducationDetailPage,
+    SportDetailPage
   ],
   imports: [
     BrowserModule,
@@ -101,6 +107,9 @@ import {HomeDetailPage} from '../pages/home-detail/home-detail';
         { component: EducationAndSupportPage, name: 'EducationAndSupportPage', segment: 'educationAndSupport' },
         { component: EventDetailPage, name: 'EventDetailPage', segment: 'eventDetail' },
         { component: HomeDetailPage, name: 'HomeDetailPage', segment: 'homeDetail' },
+        { component: WomenEmpowermentDetailPage, name: 'WomenEmpowermentDetailPage', segment: 'womenEmpowermentDetail' },
+        { component: EducationDetailPage, name: 'EducationDetailPage', segment: 'educationDetail' },
+        { component: SportDetailPage, name: 'SportDetailPage', segment: 'sportDetail' },
       ]
     }),
     IonicStorageModule.forRoot()
@@ -130,7 +139,10 @@ import {HomeDetailPage} from '../pages/home-detail/home-detail';
     WomenImpowermentPage,
     EducationAndSupportPage,
     EventDetailPage,
-    HomeDetailPage
+    HomeDetailPage,
+    WomenEmpowermentDetailPage,
+    EducationDetailPage,
+    SportDetailPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
