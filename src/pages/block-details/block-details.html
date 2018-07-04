@@ -1,34 +1,30 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-         NEERA
-    </ion-title>
+    <ion-title>{{item.block_name}}</ion-title>
     <ion-buttons right>
       <button ion-button icon-only><ion-icon><img  src="assets/img/bjplogosmall.png"></ion-icon></button>
     </ion-buttons>
-
   </ion-navbar>
+
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let item of news;">
-    <ion-item (click)="goNewsDetail(item)">
+
+  <ion-card>
+    <ion-item>
       <ion-avatar item-start>
-          <img src= {{item.imgUrl}}/>
+          <img src= {{item.innerDesc.title}}/>
       </ion-avatar>
       <h2>{{item.title}}</h2>
-      <p>{{item.time}}</p>
-    </ion-item>
+      <p>{{item.overview_title}}</p>
+   <!-- </ion-item>
 
     <img src= {{item.imgUrl}}/>
 
     <ion-card-content>
-      <p>{{item.subDesc}}</p>
+      <p>{{item.fullDesc}}</p>
     </ion-card-content>
-
+  -->
      <ion-row>
       <ion-col>
         <button ion-button icon-start clear small>
@@ -49,5 +45,4 @@
       </ion-col>
      </ion-row>
   </ion-card>
-
 </ion-content>

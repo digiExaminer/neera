@@ -322,7 +322,7 @@
     "id": "13"
   }],
 
-  
+
   "homePageData": [
     {
       "id": 1,
@@ -428,7 +428,159 @@
       "subDesc": "रांची। शिक्षा मंत्री नीरा यादव ने कहा है कि झारखण्ड के छात्र-छात्राओं को गुणवत्तापूर्ण शिक्षा देने के लिए सरकार दृढ़ संकल्पित है, इसके लिए सरकार ने शिक्षकों की नियुक्ति, छात्राओं के लिए महाविद्यालय बस सेवा, प्रयोगशाला एवं पुस्तकालयों का नवीनीकरण आदि का कार्य किया जा रहा है। सरकार विद्यार्थियों की प्रतिभा को निखारने के लिए समागम का भी आयोजन कर रही है। उपरोक्त जानकारी शिक्षा मंत्री ने शुक्रवार को सूचना भवन के सभागार में आयोजित संवाददाता सम्मेलन में दी।",
       "fullDesc": "रांची। शिक्षा मंत्री नीरा यादव ने कहा है कि झारखण्ड के छात्र-छात्राओं को गुणवत्तापूर्ण शिक्षा देने के लिए सरकार दृढ़ संकल्पित है, इसके लिए सरकार ने शिक्षकों की नियुक्ति, छात्राओं के लिए महाविद्यालय बस सेवा, प्रयोगशाला एवं पुस्तकालयों का नवीनीकरण आदि का कार्य किया जा रहा है। सरकार विद्यार्थियों की प्रतिभा को निखारने के लिए समागम का भी आयोजन कर रही है। उपरोक्त जानकारी शिक्षा मंत्री ने शुक्रवार को सूचना भवन के सभागार में आयोजित संवाददाता सम्मेलन में दी।"
     }
-  ]
+  ],
+  "aboutkoderma":[{
+    "id":1,
+    "block_name":"Satgawan",
+    "image_url":"satgawan.png",
+   "innerDesc": {
+   "image_url":"satgawanIn.png",
+   "title":"Satgawan is a community development block that forms an administrative division of Koderma district, Jharkhand state, India.",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district occupies the northern end of the Chota Nagpur Plateau. The average altitude is 397 m above sea level. The topography is hilly and the area mostly has laterite soil with patches of clay. Although the net area sown is around 13% of the total area, Monsoon dependent agriculture supports majority of the population. Forest area covers 43% of the total area. Koderma Reserve Forest occupies the northern part of the district. Density of population in the district was 282 persons per km2. Koderma district was once famous for its mica production but low quality of mica ore and high cost of production led to closure of many units. Only two units still survive. Around 40-50% of the families are below poverty line. Based on the number of households in 2011 census and BPL revision survey of 2010-11, the percentage of BPL families in the rural areas is 64.22%",
+   "rivers_title":"Rivers",
+   "rivers_desc":"The Sakri River flows in the eastern of the Satgawan. The Sakri river is the main river in the northern part of the Koderma district. Ghggnna Naddi, Chhotanari Nadi And Tamoriya are the tributaries of Sakri river.",
+   "location_title":"Location",
+   "location_details":"Satgawan is located at 24°44′40″N 85°46′35″E. It has an average elevation of 252 metres (827 ft). Satgawan CD Block is bounded by Kawakol CD Block of Nawada district of Bihar in the north, Gawan Block of Giridih district in the east, Domchanch CD Block in the south and Gobindpur CD Block of Nawada district in the west.It is located 59 km from district headquarter Koderma",
+   "admin_title":"Area and administration",
+   "admin_desc":"Satgawan CD Block has an area of 303.86 km2. The block has 144 villages.",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"Gram Panchayats in Satgawan CD Block are: Nawadih, Tehro, Ambabad, Basodih, Itai, Kataiya, Khuntta, Khothiyar, Madhopur, Murchoi, Mirganj, Rajabar, Samaldih and Shivpur",
+   "Demographics_title":"Demographics",
+   "Population_title":"Population",
+   "population_desc":"As per the 2011 Census of India Satgawan CD Block had a total population of 74,520, all of which were rural. There were 38,183 (51%) males and 36,337 (49%) females. Population below 6 years was 13,904. Scheduled Castes numbered 16,787 (22.53%) and Scheduled Tribes numbered 383 (0.51%).",
+   "literacy_title":"Literacy",
+   "literacy_desc":"As per the 2011 census the total number of literates in Satgawan CD Block was 35,006 (57.76% of the population over 6 years) out of which males numbered 22,076 (70.05% of the male population over 6 years) and females numbered 12,930 (43.85% of the female population over 6 years). The gender disparity (the difference between female and male literacy rates) was 27.10%.As per 2011 census, literacy in Koderma district was 66.84%, up from 52.20% in 2001. Literacy in Jharkhand (for population over 7 years) was 66.41% in 2011. Literacy in India in 2011 was 74.04%.",
+   "school_title":"Language",
+   "schoolo_desc":"National Public School"
+
+ }},{
+    "id":2,
+    "block_name":"Chandwara",
+    "image_url":"chandwara.png",
+   "innerDesc": {
+   "image_url":"chandwaraIn.png",
+   "title":"Chandwara is a community development block that forms an administrative division of Koderma district, Jharkhand state, India",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district occupies the northern end of the Chota Nagpur Plateau. The average altitude is 397 m above sea level. The topography is hilly and the area mostly has laterite soil with patches of clay. Although the net area sown is around 13% of the total area, Monsoon dependent agriculture supports majority of the population. Forest area covers 43% of the total area. Koderma Reserve Forest occupies the northern part of the district. Density of population in the district was 282 persons per sq km. Koderma district was once famous for its mica production but low quality of mica ore and high cost of production led to closure of many units. Only two units still survive. Around 40-50% of the families are below poverty line. Based on the number of households in 2011 census and BPL revision survey of 2010-11, the percentage of BPL families in the rural areas is 64.22%",
+   "rivers_title":"Rivers",
+   "rivers_desc":"The Barakar River flows in the southern part of the district and supports the multi-purpose Tilaiya Dam. Poanchkhara, Keso, Akto, Gurio, Gukhana Nadi are the main tributaries of the Barakar in the district. The Sakri river is the main river in the northern part of the district. Ghggnna Naddi, Chhotanari Nadi are the tributaries of Sakri river",
+   "location_title":"Location",
+   "location_desc":"Chandwara is located at 24°23′42″N 85°29′4″E. Chandwara CD Block is bounded by Rajauli CD Block, in Nawada district of Bihar, in the north, Koderma and Jainagar CD Blocks in the east, Barhi CD Block, in Hazaribagh district in the south and Chauparan CD Block, in Hazaribagh district, in the west.It is located 16 km from Koderma, the district headquarters",
+   "admin_title":"Area and administration",
+   "admin_desc":"Chandwara CD Block has an area of 232.05 km2. The block has 88 villages",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"Gram Panchayats in Chandwara CD Block are: Aragaro, Badkidhamrai, Bendi, Bhondo, Birsodih, Chandwara East, Chandwara West, Kanko, Kanti, Khandi, Madangundi, Pathalgada, Pipradih, Tham and Urwan",
+   "Demographics_title":"Demographics",
+   "Population_title":"Population",
+   "population_desc":"As per the 2011 Census of India Chandwara CD Block had a total population of 84,914, all of which were rural. There were 43,961 (52%) males and 40,953 (48%) females. Population below 6 years was 15,994. Scheduled Castes numbered 16,763 (19.74%) and Scheduled Tribes numbered 563 (0.66%).",
+   "literacy_title":"Literacy",
+   "literacy_desc":"As per the 2011 census the total number of literates in Chandwara CD Block was 43,936 (63.75% of the population over 6 years) out of which males numbered 27,432 (76.82% of the male population over 6 years) and females numbered 16,504 (49.69%) of the female population over 6 years). The gender disparity (the difference between female and male literacy rates) was 27.13%. As per the 2011 census, literacy in Koderma district was 66.84%, up from 52.20% in 2001.Literacy in Jharkhand (for population over 7 years) was 66.41% in 2011. Literacy in India in 2011 was 74.04%",
+   "school_title":"Language",
+   "schoolo_desc":""
+
+ }},{
+    "id":3,
+    "block_name":"Domchanch",
+    "image_url":"domchach.png",
+   "innerDesc": {
+   "image_url":"domchachIn.png",
+   "title":"Domchanch is a community development block that forms an administrative division of Koderma district, Jharkhand state, India.",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district occupies the northern end of the Chota Nagpur Plateau. The average altitude is 397 m above sea level. The topography is hilly and the area mostly has laterite soil with patches of clay. Although the net area sown is around 13% of the total area, Monsoon dependent agriculture supports majority of the population. Forest area covers 43% of the total area. Koderma Reserve Forest occupies the northern part of the district. Density of population in the district was 282 persons per km2. Koderma district was once famous for its mica production but low quality of mica ore and high cost of production led to closure of many units. Only two units still survive. Around 40-50% of the families are below poverty line. Based on the number of households in 2011 census and BPL revision survey of 2010-11, the percentage of BPL families in the rural areas is 64.22%.",
+   "rivers_title":"Rivers",
+   "rivers_desc":"The Barakar River flows in the southern part of the district and supports the multi-purpose Tilaiya Dam. Poanchkhara, Keso, Akto, Gurio, Gukhana Nadi are the main tributaries of the Barakar in the district. The Sakri river is the main river in the northern part of the district. Ghggnna Naddi, Chhotanari Nadi are the tributaries of Sakri river",
+   "location_title":"Location",
+   "location_desc":"Domchanch is located at 24°28′23″N 85°41′23″E. Domchanch CD Block is bounded by Satgawan CD Block in the north, Gawan CD Block, in Giridih district, and Markacho CD Block in the east, Jainagar CD Block in the south and Koderma CD Block and Rajauli CD Block, in Nawada district of Bihar, in the west",
+   "admin_title":"Area and administration",
+   "admin_desc":"Domchanch CD Block has an area of 325.30 km2. The block has 130 villages.",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"Gram Panchayats in Domchanch CD Block are: Bachhedih, Bagdo, Bagridih, Bangakhalar, Behradih, Dhab, Dhodhakola, Domchanch East, Domchanch North, Domchanch South, Ghargawan, Janpur, Kharkhar, Kundidhanwar, Madhuban, Mathadih, Masmohana, Masnodih, Nawadih, Parho, Phulwariya, Purnadih and Tetariyadih",
+   "Demographics_title":"Demographics",
+   "demo_desc":"",
+   "Population_title":"Population",
+   "population_desc":"As per the 2011 Census of India Domchanch CD Block had a total population of 125,387, of which 109,587 were rural and 15,809 were urban. There were 64,076 (51%) males and 61,311 (49%) females. Population below 6 years was 24,576. Scheduled Castes numbered 17,547 (13.99%) and Scheduled Tribes numbered 2,355 (1.88%). Domchanch is a census town in Domchanch CD Block with a population of 15,809 in 2011",
+   "literacy_title":"Literacy",
+   "literacy_desc":"As per the 2011 census the total number of literates in Domchamch CD Block was 64,034 (63.52% of the population over 6 years) out of which males numbered 39,676 (76.89% of the male population over 6 years) and females numbered 24,358 (49.50%) of the female population over 6 years). The gender disparity (the difference between female and male literacy rates) was 27.40%. As per 2011 census, literacy in Koderma district was 66.84%, up from 52.20% in 2001. Literacy in Jharkhand (for population over 7 years) was 66.41% in 2011. Literacy in India in 2011 was 74.04%",
+   "school_title":"Language",
+   "schoolo_desc":""
+
+ }},{
+    "id":4,
+    "block_name":"Jainagar",
+    "image_url":"",
+   "innerDesc": {
+   "image_url":"",
+   "title":"Jainagar is a community development block that forms an administrative division of Koderma district, Jharkhand state, India.",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district occupies the northern end of the Chota Nagpur Plateau. The average altitude is 397 m above sea level. The topography is hilly and the area mostly has laterite soil with patches of clay. Although the net area sown is around 13% of the total area, Monsoon dependent agriculture supports majority of the population. Forest area covers 43% of the total area. Koderma Reserve Forest occupies the northern part of the district. Density of population in the district was 282 persons per sq km. Koderma district was once famous for its mica production but low quality of mica ore and high cost of production led to closure of many units. Only two units still survive. Around 40-50% of the families are below poverty line. Based on the number of households in 2011 census and BPL revision survey of 2010-11, the percentage of BPL families in the rural areas is 64.22%.",
+   "rivers_title":"Rivers",
+   "rivers_desc":"The Barakar River flows in the southern part of the district and supports the multi-purpose Tilaiya Dam. Poanchkhara, Keso, Akto, Gurio, Gukhana Nadi are the main tributaries of the Barakar in the district. The Sakri river is the main river in the northern part of the district. Ghggnna Naddi, Chhotanari Nadi are the tributaries of Sakri river",
+   "location_title":"Location",
+   "admin_title":"Area and administration",
+   "admin_desc":"Jainagar CD Block has an area of 183.37 km2. The block has 135 villages.",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"Gram Panchayats in Jainagar CD Block are: Beko, Chehal,chandrapur Dandadih, Gadgi, Gharaunja, Gohal, Hirodih, Jainagar East, Jainagar West, Kakorcholi, Kandrapdih, Kariyawan , Kathadih, Katiya, Khariodih, Naitand, Pipcho, Rupaidih, Satdiha, Tamal, Tetron, Tilokrai and Yogiatilha.",
+   "Demographics_title":"Demographics",
+   "Population_title":"Population",
+   "population_desc":"As per the 2011 Census of India Jainagar CD Block had a total population of 131,279, all of which were rural. There were 67,708 (52%) males and 63,571 (48%) females. Population below 6 years was 24,519. Scheduled Castes numbered 19,527 (14.87%) and Scheduled Tribes numbered 239 (0.18%)",
+   "literacy_title":"Literacy",
+   "literacy_desc":"As per the 2011 census the total number of literates in Jainagar CD Block was 72,061 (67.50% of the population over 6 years) out of which males numbered 45,117 (82.08% of the male population over 6 years) and females numbered 26,944 (52.02%) of the female population over 6 years). The gender disparity (the difference between female and male literacy rates) was 30.06%. As per 2011 census, literacy in Koderma district was 66.84%, up from 52.20% in 2001. Literacy in Jharkhand (for population over 7 years) was 66.41% in 2011. Literacy in India in 2011 was 74.04%.",
+   "school_title":"Language",
+   "schoolo_desc":""
+
+ }},{
+    "id":5,
+    "block_name":"Markacho",
+    "image_url":"markacho.png",
+   "innerDesc": {
+   "image_url":"markachoIn.png",
+   "title":"Markacho is a community development block that forms an administrative division of Koderma district, Jharkhand state, India.",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district occupies the northern end of the Chota Nagpur Plateau. The average altitude is 397 m (1,302 ft) above sea level. The topography is hilly and the area mostly has laterite soil with patches of clay. Although the net area sown is around 13% of the total area, Monsoon dependent agriculture supports majority of the population. Forest area covers 43% of the total area. Koderma Reserve Forest occupies the northern part of the district. Density of population in the district was 282 persons per sq km. Koderma district was once famous for its mica production but low quality of mica ore and high cost of production led to closure of many units. Only two units still survive. Around 40-50% of the families are below poverty line. Based on the number of households in 2011 census and BPL revision survey of 2010-11, the percentage of BPL families in the rural areas is 64.22%",
+   "rivers_title":"Rivers",
+   "rivers_desc":"The Barakar River flows in the southern part of the district and supports the multi-purpose Tilaiya Dam. Poanchkhara, Keso, Akto, Gurio, Gukhana Nadi are the main tributaries of the Barakar in the district. The Sakri river is the main river in the northern part of the district. Ghggnna Naddi, Chhotanari Nadi are the tributaries of Sakri river",
+   "location_title":"Location",
+   "location_desc":"Markacho is located at 24°19′38″N 85°50′4″E. It has an average elevation of 332 metres (1,089 ft).Markacho CD Block is bounded by Gawan CD Block, in Giridih district in the north, Dhanwar and Birni CD Blocks in the east, Chalkusa CD Block, in Hazaribagh district in the south and Jainagar and Domchanch CD Blocks in the west.It is located 34 km from Koderma, the district head quarters.",
+   "admin_title":"Area and administration",
+   "admin_desc":"Markacho CD Block has an area of 228.04 km2. The block has 108 villages",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"Gram Panchayats in Markacho CD Block are: Chopnadih, Dagarnawan, Devepur, Daharokhurd, Jamu, Kadodih, Mahugai, Markacho Middle, Markacho North, Markacho South, Murkmanai, Nawadih, Paplo, Purnanagar, Simariya and Telodih.",
+   "Demographics_title":"Demographics",
+
+   "Population_title":"Population",
+   "population_desc":"As per the 2011 Census of India, Markacho CD Block had a total population of 94,419, all of which were rural. There were 46,865 (50%) males and 47,554 (50%) females. Population below 6 years was 18,421. Scheduled Castes numbered 10,838 (11.48%) and Scheduled Tribes numbered 2,226 (2.36%).",
+   "literacy_title":"Literacy",
+   "literacy_desc":"As of 2011 census, the total number of literates in Markacho CD Block was 48,796 (64.21% of the population over 6 years) out of which males numbered 29,827 (79.46% of the male population over 6 years) and females numbered 18,969 (49.32%) of the female population over 6 years). The gender disparity (the difference between female and male literacy rates) was 30.14%. As of 2011 census, literacy in Koderma district was 66.84%, up from 52.20% in 2001.Literacy in Jharkhand (for population over 7 years) was 66.41% in 2011. Literacy in India in 2011 was 74.04%",
+   "school_title":"Language",
+   "schoolo_desc":""
+
+ }},{
+    "id":6,
+    "block_name":"Koderma",
+    "image_url":"koderma.png",
+   "innerDesc": {
+   "image_url":"kodermaIn",
+   "title":"Kodarma (also spelled as Koderma) is a city and a notified area in Koderma district in the Indian state of Jharkhand. The district is bound on the north by the Nawada district of Bihar, on the south by Hazaribagh district of Jharkhand, on the east by Giridih district of Jharkhand and on the west by the Gaya district of Bihar.",
+   "overview_title":"Overview",
+   "overview_desc":"Koderma district lies in the Chhotanagpur Plateau at 397 m (1,302 ft) above the sea level. The area exhibits undulating topography comprising hills, hillocks, plains and mounds. Northern part of the district is occupied by Koderma Reserve Forest. The highest peak is Debour Ghati (677 m) which is the boundary of Jharkhand and Bihar states. The section line from south to north from Jharkhand to Bihar passes through Hazaribag plateau. The rocks at the edge of this plateau have been cut deeply by innumerable streams. There are a number of rills and gullies of various type such as figure or shoe-lace gullies. Barakar River flows from west to east in the southern part of the district and supports Tilaiya Hydel project, a multipurpose dam constructed on it. Poanchkhara, Keso, Akto, Gurio, Gukhana Nadi are the main tributaries of the Barakar river. Sakri river is the main river in the northern part of the district which flows from south east to northwest. Ghggnna Naddi, Chhotanari Nadi are the tributaries of Sakri river. Mahua, Banyan, Sakhua, Palash, Peepal, Neem, Khajoor, Bamboo are the flora of the area. Fauna such as leopard, bear, pig, deer and hare are found in the forest area of Koderma Reserve forest. Koderma is surrounded by forests and many natural resources, Dhawajadhari Pahar (hill) that is dedicated to lord SHIVA and on the MAHASHIVRATRI many devotees get together to worship the GOD. Koderma district is richly endowed with natural resources. At one time, Koderma was considered as the mica capital of India. During that time, the townships of Koderma and Jhumri Tilaiya had seen the rise of several mica tycoons, including the houses of Goenkas,Bhadanis, Modi family, Khatuwala family (http://khatuwalagroup.com/) including late Chottu Modi and Rajgarhias. Now, it is the fastest developing city in Jharkhand state. Koderma holds the world record in terms of holding largest deposits of Mica in the world.",
+   "rivers_title":"Rivers",
+   "rivers_desc":"",
+   "location_title":"Location",
+   "location_desc":"",
+   "admin_title":"Area and administration",
+   "gram_panchayat_title":"Gram Panchayats",
+   "gram_panchayat_desc":"",
+   "Demographics_title":"Demographics",
+   "Population_title":"Population",
+   "population_desc":"As per 2011 Census of India, Kodarma Nagar Parishad had a total population of 24,633 of which 12,941 were males and 11,692 females. Scheduled Castes numbered 1,691 and Scheduled Tribes numbered 153. As of 2001 India census, Kodarma had a population of 17,160. Males constitute 53% of the population and females 47%. Kodarma has an average literacy rate of 63%, higher than the national average of 59.5%: male literacy is 71%, and female literacy is 53%. In Kodarma, 17% of the population is under 6 years of age",
+   "literacy_title":"Literacy",
+   "literacy_desc":"",
+   "literacy_desc":"",
+   "school_title":"Language",
+   "schoolo_desc":""
+
+ }}]
 
 
 }
