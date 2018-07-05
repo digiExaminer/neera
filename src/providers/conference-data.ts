@@ -153,10 +153,30 @@ export class ConferenceData {
       return data.achievement;
     });
   }
-
+  getDevelopment() {
+    return this.load().map((data: any) => {
+      return data.developmentData;
+    });
+  }
   getEvents() {
     return this.load().map((data: any) => {
       return data.homePageData;
+    });
+  }
+
+  getEducationData() {
+    return this.load().map((data: any) => {
+      return data.educationpageData;
+    });
+  }
+  getSportsData() {
+    return this.load().map((data: any) => {
+      return data.sportspageData;
+    });
+  }
+  getWomenEmpowermentData() {
+    return this.load().map((data: any) => {
+      return data.womenEmpowerment;
     });
   }
 

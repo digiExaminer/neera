@@ -11,38 +11,63 @@
 <ion-content>
 
   <ion-card>
-    <ion-item>
-      <ion-avatar item-start>
-          <img src= {{item.innerDesc.title}}/>
-      </ion-avatar>
-      <h2>{{item.title}}</h2>
-      <p>{{item.overview_title}}</p>
-   <!-- </ion-item>
-
-    <img src= {{item.imgUrl}}/>
-
+    <img src= {{item.innerDesc.image_url}}/>
     <ion-card-content>
-      <p>{{item.fullDesc}}</p>
+      <ion-card-title>
+        <h2 class="borderbottomh2">{{item.block_name}}</h2>
+        </ion-card-title>
+
+
+
+
+
+
+
+
+
+
+        <p class="borderbottom">{{item.innerDesc.title}}</p>
+
+
+        <h3 class="borderbottomh3">{{item.innerDesc.overview_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.overview_desc}}</p>
+
+
+        <h3 class="borderbottomh3">{{item.innerDesc.rivers_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.rivers_desc}}</p>
+
+
+        <h3 class="borderbottomh3">{{item.innerDesc.location_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.location_details}}</p>
+
+
+        <h3 class="borderbottomh3">{{item.innerDesc.admin_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.admin_desc}}</p>
+
+        <h3 class="borderbottomh3">{{item.innerDesc.gram_panchayat_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.gram_panchayat_desc}}</p>
+
+
+        <h2 class="borderbottomh2">{{item.innerDesc.Demographics_title}}</h2>
+        <h3 class="borderbottomh3">{{item.innerDesc.Population_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.population_desc}}</p>
+
+        <h3 class="borderbottomh3">{{item.innerDesc.literacy_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.literacy_desc}}</p>
+
+        <h3 class="borderbottomh3">{{item.innerDesc.school_title}}</h3>
+        <p class="borderbottom">{{item.innerDesc.schoolo_desc}}</p>
+
+
+
+
+
+
+
+
+
+
+
     </ion-card-content>
-  -->
-     <ion-row>
-      <ion-col>
-        <button ion-button icon-start clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-start clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col>
-       <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-     </ion-row>
   </ion-card>
 </ion-content>

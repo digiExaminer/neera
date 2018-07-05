@@ -12,13 +12,14 @@ import {AchievementDetailPage} from '../achievement-detail/achievement-detail';
 export class AchievementPage {
 
   achievement: any[] = [];
-  
+
   constructor(
     public navCtrl: NavController,
     public confData: ConferenceData
   ) {
     this.confData.getAchievement().subscribe((data: any[]) => {
       this.achievement = data;
+      console.log(this.achievement);
      });
   }
 

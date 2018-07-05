@@ -16,6 +16,7 @@ import { HomePage } from '../pages/home/home';
 import { NewsListPage} from '../pages/news-list/news-list';
 import { SupportPage } from '../pages/support/support';
 
+
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
@@ -57,7 +58,7 @@ export class ConferenceApp {
     { title: 'Achievement', name: 'AchievementPage', component: AchievementPage, icon: 'trophy' },
     { title: 'know your Kodarma ', name: 'KodarmaPage', component: KodarmaPage, icon: 'map' },
     { title: 'know your Development ', name: 'DevelopmentPage', component: DevelopmentPage, icon: 'information-circle' },
-    { title: 'Women Impowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'woman' },
+    { title: 'Women Empowerment', name: 'WomenImpowermentPage', component: WomenImpowermentPage, icon: 'woman' },
     { title: 'Education & Sport', name: 'EducationAndSupportPage', component: EducationAndSupportPage, icon: 'ios-book' }
   ];
   loggedInPages: PageInterface[] = [

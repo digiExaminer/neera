@@ -44,8 +44,19 @@
 .aboutlabel{
   color:black;
   font-weight:bold;
+  text-align: left;
 }
 .aboutdesc{
   color:white;
-  padding-left:10px;
+text-align: right;
+}
+tr:nth-child(odd) {background-color: #ff9800;}
+tr:nth-child(even) {background-color:green;}
+
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  min-width: 160px;
+  padding: 10px;
 }

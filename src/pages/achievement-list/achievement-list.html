@@ -14,16 +14,16 @@
     <ion-card *ngFor="let item of achievement;">
         <ion-item (click)="goAchievementDetail(item)">
           <ion-avatar item-start>
-              <img src= {{item.profilePic}}/>
+              <img src= {{item.imgUrl}}/>
           </ion-avatar>
-          <h2>{{item.name}}</h2>
+          <h2>{{item.title}}</h2>
           <p>November 5, 1955</p>
         </ion-item>
 
-        <img src= {{item.profilePic}}/>
+        <img src= {{item.imgUrl}}/>
 
         <ion-card-content>
-          <p>Wait a minute. Wait a minute,  This is heavy. hello dost kaise ho </p>
+          <p>{{item.subDesc}} </p>
         </ion-card-content>
 
          <ion-row>
